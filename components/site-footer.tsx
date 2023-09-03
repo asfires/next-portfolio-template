@@ -1,3 +1,5 @@
+// credit: https://github.com/shadcn-ui/ui/blob/main/apps/www/components/site-footer.tsx
+
 export function SiteFooter() {
   return (
     <footer className="py-6 md:px-8 md:py-0">
