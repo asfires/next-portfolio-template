@@ -38,8 +38,8 @@ export default function Page() {
           <p className="leading-7 [&:not(:first-child)]:mt-6">Good luck!</p>
           {siteConfig.images.about.length
             ? siteConfig.images.about.map((item, index) => (
-                <>
-                  <AspectRatio ratio={3 / 2} className="mt-6" key={index}>
+                <div key={index}>
+                  <AspectRatio ratio={3 / 2} className="mt-6">
                     <Image
                       src={item.src}
                       alt={item.alt}
@@ -52,7 +52,7 @@ export default function Page() {
                   <div className="my-2 text-muted-foreground">
                     {item.caption}
                   </div>
-                </>
+                </div>
               ))
             : null}
         </div>
