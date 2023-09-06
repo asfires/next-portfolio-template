@@ -32,7 +32,7 @@ export function ProjectGallery({ items }: ProjectsProps) {
                       <CardDescription>{item.shortDescription}</CardDescription>
                     ) : null}
                   </CardHeader>
-                  <CardContent className="px-6 py-2">
+                  <CardContent className="px-6 pb-5 pt-2">
                     {item.longDescription}
                     <br />
                     <br />
@@ -65,7 +65,7 @@ export function ProjectGallery({ items }: ProjectsProps) {
                       ) : null}
                     </div>
                   </CardContent>
-                  <CardContent className="space-x-1 px-6 py-2">
+                  <CardContent className="flex flex-wrap gap-1 py-2">
                     {item.technologies.map((technology, index) => (
                       <Badge variant="secondary" key={index}>
                         {technology}
